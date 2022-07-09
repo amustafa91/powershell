@@ -14,7 +14,7 @@ function RunDialog() {
     }
     elseif ($item.TemplateId -eq '{AB86861A-6030-46C5-B394-E8F99E8B87DB}') {
         $content = GenerateType($item)
-        $fileName = "$(Sitecore.Data.Items.ItemUtil.ProposeValidItemName(SanitizeName($item))).cs"
+        $fileName = "$(SanitizeName($item)).cs"
     }
     $container = $container.replace('{placeholder}', $content)
     $container | Out-Download -Name $fileName
