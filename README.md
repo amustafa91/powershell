@@ -33,8 +33,8 @@ Contributors names and contact info
 [@Amro Mustafa](https://twitter.com/ammustafa)
 
 ## Version History
-* 0.1
-    * Initial Release
+* 1.0
+    * First Release
 
 ## License
 
