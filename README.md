@@ -15,7 +15,7 @@ that's why i created this package which will help you to create C# templates in 
 
 ### Installing
 
-* Download [Templates generator Package](https://github.com/amustafa91/powershell/blob/templates-generator/c-sharp-templates-generator-1.0.zip)
+* Download [Templates generator Package](https://github.com/amustafa91/powershell/raw/templates-generator/c-sharp-templates-generator-1.0.zip "download")
 * Ensure that this file **"Spe.IdentityServer.config"** is not disabled
 
 ### How to use it
