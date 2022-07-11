@@ -20,6 +20,7 @@ that's why i created this package which will help you to create C# templates in 
 
 ### How to use it
 
+You can watch the video on [YouTube](https://youtu.be/ClpQmwOpm-I) or follow the below steps
 1. Install the Templates generator Package
 2. Go to any **Template** or any **Template Folder**
 3. Right click >> Script >> click on Download C sharp Template
