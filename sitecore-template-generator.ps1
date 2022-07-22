@@ -67,11 +67,12 @@ function GetFieldsAsProps($template) {
     # exclude sections
     $fields = Get-ChildItem -ID $template.ID -Recurse | Where-Object { $_.TemplateId -ne "{E269FBB5-3750-427A-9149-7AA950B49301}" }
     foreach ($field in $fields) {
+        $fieldName= $field.Name.Replace(" ","")
         if ($propsType -eq 1) {
-            $properties += "public static readonly string $($field.Name) = ""$($field.ID)""; `n "
+            $properties += "public static readonly string $($fieldName) = ""$($field.ID)""; `n "
         }
         else {
-            $properties += "public static readonly ID $($field.Name) = new ID(""$($field.ID)""); `n "
+            $properties += "public static readonly ID $($fieldName) = new ID(""$($field.ID)""); `n "
         }
     }
     return $properties
@@ -79,7 +80,7 @@ function GetFieldsAsProps($template) {
 
 function SanitizeName($template) {
     $name = $template.Name
-    $name= $name.Replace(".", "").Replace("/", "").Replace("-", "").Replace("&amp;", "").Replace(":", "").Replace("""", "").Replace("#", "")
+    $name= $name.Replace(".", "").Replace("/", "").Replace("-", "").Replace("&amp;", "").Replace(":", "").Replace("""", "").Replace("#", "").Replace(" ","")
     
     if ($removeUnderscore -eq 1) {
         $name = $name.replace('_', '')
