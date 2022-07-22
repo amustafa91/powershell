@@ -15,7 +15,7 @@ that's why i created this package which will help you to create C# templates in 
 
 ### Installing
 
-* Download [Templates generator Package](https://github.com/amustafa91/powershell/raw/templates-generator/c-sharp-templates-generator-1.0.zip "download")
+* Download [Templates generator Package](https://github.com/amustafa91/powershell/blob/templates-generator/Sitecore%20Packages/c-sharp-templates-generator-1.01.zip "download")
 * Ensure that this file **"Spe.IdentityServer.config"** is not disabled
 
 ### How to use it
@@ -37,6 +37,8 @@ Contributors names and contact info
 ## Version History
 * 1.0
     * First Release
+* 1.01
+    * Fix Whitespace issue
 
 ## License
 
